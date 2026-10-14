@@ -1,12 +1,35 @@
 # Godot Tower Defense Core Lite – Godot 4 tower defense starter (free, MIT)
 
-**Data-driven towers, enemies and waves with upgrades, targeting and flyers – typed GDScript, headless-tested, ready to reskin.**
+**Godot Tower Defense Core Lite is a free, MIT-licensed Godot 4 tower defense starter kit / project template in typed GDScript.**
+
+[![Godot 4.7](https://img.shields.io/badge/Godot-4.7-478cbf?logo=godotengine&logoColor=white)](https://godotengine.org) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Tests: 54 passing](https://img.shields.io/badge/tests-54%20passing-brightgreen)](tools/run_tests.sh) [![Pro: €6](https://img.shields.io/badge/Pro-%E2%82%AC6-ff5c5c)](https://huginhelm.itch.io/godot-tower-defense-core)
+
+- **Engine:** Godot 4.7 (tested on 4.7.2) · **Language:** typed GDScript · **Licence:** MIT
+- **Tests:** 54 headless checks passing (`bash tools/run_tests.sh`)
+- **Website:** https://openclawaimac.github.io/godot-tower-defense-core/ · **Pro edition (€6, 128 tests, commercial EULA):** https://huginhelm.itch.io/godot-tower-defense-core
+- **For AI agents:** [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt)
 
 ![Demo](docs/demo.gif)
 
-▶️ **[Play the web demo](https://huginhelm.itch.io/godot-tower-defense-core)** · ⭐ **[Get Godot Tower Defense Core Pro](https://huginhelm.itch.io/godot-tower-defense-core)**
+## Quickstart
+```bash
+git clone https://github.com/openclawaimac/godot-tower-defense-core-lite.git && cd godot-tower-defense-core-lite
+godot --headless --path . --import      # first import (registers class_name scripts)
+bash tools/run_tests.sh /path/to/godot  # expect: RESULT: PASS 54 checks
+godot --path .                          # run the demo (or open project.godot and press F5)
+```
+To use it in your own game, copy `addons/td_core/` into your project.
 
-Godot **4.7** (tested on 4.7.2) · typed GDScript · MIT · v0.3.0
+## Lite vs Pro (summary)
+| | Lite (this repo) | Pro |
+|---|---|---|
+| Price | Free | €6 |
+| Licence | MIT | Commercial per-seat EULA |
+| Headless tests | 54 | 128 |
+| Same API | ✅ | ✅ (upgrade without code changes) |
+| Where | https://github.com/openclawaimac/godot-tower-defense-core-lite | [https://huginhelm.itch.io/godot-tower-defense-core](https://huginhelm.itch.io/godot-tower-defense-core) |
+
+Full comparison below and on https://openclawaimac.github.io/godot-tower-defense-core/
 
 ## Features
 - `TDContent`: towers, enemies, waves and the map in one JSON file, with `validate()`
@@ -55,7 +78,7 @@ tools/            run_tests.sh (strict runner)
 | Sprites (Kenney CC0) | ✅ | ✅ |
 | Sound effects, jingles, music (CC0) | – | ✅ |
 | Headless tests | ✅ 54 checks | ✅ 128 checks |
-| Web export preset, capture tooling, AGENTS.md / llms.txt, design notes | – | ✅ |
+| Web export preset, capture tooling, design notes | – | ✅ |
 | Licence | MIT | Commercial EULA (per seat) |
 
 **[Get Pro on itch.io](https://huginhelm.itch.io/godot-tower-defense-core)**

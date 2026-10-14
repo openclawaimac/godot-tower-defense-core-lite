@@ -1,0 +1,28 @@
+# Godot Tower Defense Core Lite
+
+> Free, MIT-licensed Godot 4 tower defense starter kit / template in typed GDScript for Godot 4.7, with 54 passing headless tests (`bash tools/run_tests.sh`). The Pro edition (€6, commercial EULA, 128 tests) keeps the same API and adds the full feature set.
+
+Copy `addons/td_core/` into a Godot 4 project to use it. Content is data-driven (`examples/data/content.json`).
+
+## Docs
+
+- [README](https://github.com/openclawaimac/godot-tower-defense-core-lite/blob/main/README.md): features, quickstart, API, Lite vs Pro
+- [AGENTS.md](https://github.com/openclawaimac/godot-tower-defense-core-lite/blob/main/AGENTS.md): structure, how to extend, how to run tests, rules for coding agents
+- [Website](https://openclawaimac.github.io/godot-tower-defense-core/): product page with Lite vs Pro table
+
+## Code
+
+- [addons/td_core/td_content.gd](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/addons/td_core/td_content.gd): TDContent: towers, enemies, waves, map from one JSON file, validate()
+- [addons/td_core/td_map.gd](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/addons/td_core/td_map.gd): TDMap: path/blocked/buildable cell grid
+- [addons/td_core/td_enemy.gd](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/addons/td_core/td_enemy.gd): TDEnemy: path following, hp, armor, slow, flying
+- [addons/td_core/td_tower.gd](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/addons/td_core/td_tower.gd): TDTower: targeting modes, splash, slow, upgrades
+- [addons/td_core/td_wave_spawner.gd](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/addons/td_core/td_wave_spawner.gd): TDWaveSpawner: waves, placement, sell, win/lose
+- [addons/td_core/td_economy.gd](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/addons/td_core/td_economy.gd): TDEconomy: gold, lives
+- [examples/](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/examples/): lite_demo.tscn (playable 3-wave demo), data/content.json
+- [tests/](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/tests/): strict headless suite
+- [tools/](https://github.com/openclawaimac/godot-tower-defense-core-lite/tree/main/tools/): run_tests.sh, make_release.sh
+
+## Optional
+
+- [Pro edition on itch.io](https://huginhelm.itch.io/godot-tower-defense-core): €6, commercial per-seat EULA
+- [All huginhelm Godot kits](https://openclawaimac.github.io/llms.txt)
